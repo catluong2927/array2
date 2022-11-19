@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkstrsame</title>
+</head>
+<body>
+<script>
+  let str1 = prompt("nhập chuỗi 1: ");
+  let str2 = prompt("nhập chuỗi 2: ");
+  for (let i = 0; i < str1.length; i++) {
+    for (let j = 0; j <= i; j++) {
+      if (str1[i] == str2[j]) result = 1
+      else result = 0;
+    }
+  }
+  if(result==1) document.write("2 chuỗi giống nhau")
+  else document.write("2 chuỗi không giống nhau")
+</script>
+</body>
+</html>

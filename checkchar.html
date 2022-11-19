@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkchar</title>
+</head>
+<body>
+<script>
+  let num = +prompt("nhập số lượng phần tử: ");
+  let numBer = '1234567890'
+  let arr = [];
+  let count = 0;
+  for(let i = 0;i < num;i++){
+    arr[i] = prompt("nhập chuỗi: ");
+  }
+  for(let j=0;j<num;j++){
+      for(let k = 0;k < arr[j].length;k++){
+          let countcheck =0;
+          if(numBer.indexOf(arr[j][k]) != -1) countcheck++ ;
+          result = Math.floor(count = count+ (countcheck/arr[j].length));
+      }
+  }
+  if(result ==0) document.write("không có phần tử kiểu số");
+  else document.write(`có ${result} phần tử số`);
+</script>
+</body>
+</html>
